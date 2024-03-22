@@ -1,0 +1,218 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+	h1, .one{
+		font-size: 48px;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+	header nav ul li + *{
+		margin-left: 15px;
+	}
+	header nav ul li a{
+		font-size: 14px;
+	}
+	header .logo{
+		margin-right: 20px !important;
+	}
+	.user_widget a{
+		font-size: 15px;
+	}
+	header .logo svg {
+    width: 74px;
+}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+	.exchange_widget{
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+	h1,.one{
+		font-size: 42px;
+	}
+	h2,.two{
+		font-size: 32px;
+	}
+	h3,.three{
+		font-size: 24px;
+	}
+	h4,.four{
+		font-size: 20px;
+	}
+	h5,.five{
+		font-size: 18px;
+	}
+	.container-fluid{
+		--bs-gutter-x: 1rem;
+	}
+	.section-title{
+		font-size: 32px;
+		margin-bottom: 24px;
+	}
+	.section-title br{
+		display: none;
+	}
+	section{
+		padding-top: 70px;
+	}
+	header .logo svg{
+		width: 66px;
+	}
+	header,header.dark_header{
+		padding: 2px;
+		position: fixed;
+		background: var(--dark);
+	}
+	header.active,header.dark_header.active{
+		background: #fff;
+	}
+	footer{
+		padding: 50px 0 50px 0;
+	}
+	.f_widget ul{
+		margin-top: 14px;
+	}
+	.f_widget ul li a,.f_widget .f_widget_contacts a, .f_widget_contacts{
+		font-size: 16px;
+	}
+	.buy_steps_widget:not(:first-child){
+		padding: 0;
+	}
+	.buy_steps_widget{
+		padding: 0;
+	}
+	.buy_steps_widget::after{
+		width: 100%;
+		height: 1px;
+		bottom: 0;
+		top: auto;
+	}
+	.buy_steps_widget::before{
+		right: 0;
+    left: 0;
+    top: auto;
+		transform: rotate(90deg);
+		bottom: -20px;
+	}
+	.round_step{
+		margin-bottom: 20px;
+	}
+	.buy_steps_widget .text br{
+		display: none;
+	}
+	.first_screen_widget.white {
+    padding-top: 180px;
+}
+.form-group label{
+	margin-bottom: 10px;
+}
+.form-group + *{
+	margin-top: 20px;
+}
+header svg path{
+	fill: #fff;
+}
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+	h1, .one{
+		font-size: 30px;
+	}
+	h2, .two,.section-title{
+		font-size: 24px;
+	}
+	h3, .three{
+		font-size: 20px;
+	}
+	h4, .four {
+    font-size: 16px;
+	}
+	h4, .four {
+    font-size: 14px;
+	}
+	.section-title{
+		margin-bottom: 0;
+	}
+	.exchange_widget{
+		padding: 10px 12px;
+	}
+	.select2-results__option,.form-group input, .form-group select,.select2-container--default .select2-selection--single .select2-selection__rendered{
+		padding: 10px;
+	}
+	.form-group label{
+		font-size: 14px;
+	}
+	.form-group > .form-group + *{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}
+
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+	header .logo{
+		margin-right: 80px;
+	}
+	.user_widget{
+		padding-left: 20px;
+		
+		position: relative;
+	}
+	.user_widget::before{
+		content: '';
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		left: 0;
+		background: var(--dark);
+		width: 1px;
+		height: 100%;
+		position: absolute;
+	}
+	header.dark_header .user_widget::before{
+		background: #fff;
+	}
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.text {
+		font-size: 22px;
+	}
+}

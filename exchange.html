@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>SMRex</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+	<script src="libs/select2/select2.min.js" defer></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body class="home">
+
+	<div class="app">
+		<header>
+			<div class="container-fluid">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-8">
+						<div class="d-flex align-items-center justify-content-lg-start justify-content-between">
+							<a href="" class="logo">
+								<svg width="92" height="79" viewBox="0 0 92 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2_5)">
+										<path d="M77.8207 35.1834L77.8538 13.8913L63.063 7.61139V71.5744L77.8207 65.2016V44.1572H72.0201V62.5014L68.8389 63.8082V41.8348H77.8207V37.512H68.8389V15.1237L72.0366 16.5048V35.1834H77.8207Z" fill="white" />
+										<path d="M45.1655 79L50.9413 76.498V43.0425L54.1473 43.8476V75.1107L59.9231 72.6087V40.9058L52.3956 39.0231L59.9231 37.1404V6.28606L57.1468 5.08459L45.1655 0V36.7874V79ZM50.933 7.53089L54.1391 8.91816V34.1925L50.933 34.9976V7.53089Z" fill="white" />
+										<path d="M14.2619 37.45H5.61056V22.283L8.63481 20.9824V34.979H14.2619V13.3463L0 19.5085V41.8967H8.63481V58.1228L5.6023 56.8223L5.61056 44.3616H0V59.5968L14.2702 65.7962L14.2619 37.45Z" fill="white" />
+										<path d="M85.4722 51.5023L87.067 46.5788L87.571 48.1395V61.1885L91.9917 59.0766V48.0156L89.298 39.6734L91.9917 31.3312L92 19.9606L90.9341 19.4527L87.571 18.0283V31.2012L87.067 32.768L85.4722 27.8445V17.1365L81.0598 15.2538V27.9683L84.836 39.6734L81.0598 51.3723V64.0311L85.4722 62.1546V51.5023Z" fill="white" />
+										<path d="M41.9512 77.749V1.33774L17.5588 11.9033V67.1896L23.4917 69.7536V14.5478L26.7886 13.0924V71.1842L32.7214 73.7544V10.5532L36.0183 9.12874V75.1788L41.9512 77.749Z" fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_2_5">
+											<rect width="92" height="79" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<nav class="d-none d-lg-block">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">AML\KYC</a></li>
+									<li><a href="#">Вопросы\ответы</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="toggle_button d-block d-lg-none">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-none d-lg-block">
+						<div class="d-flex align-items-center justify-content-end">
+							<div class="tolbar_lang">
+								<div class="langlist_div">
+									<div class="langlist_title d-flex align-items-center">
+										<img src="images/icons/ru_RU.png">
+										<span>Русский</span>
+									</div>
+									<div class="langlist_ul">
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/en_US.png">
+											</div>
+											English
+										</a>
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/zh_CN.png">
+											</div>
+											中文
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="user_widget">
+								<a href="#">Войти</a>
+								<span>/</span>
+								<a href="#">Регистрация</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside class="d-lg-none d-block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="aside_menu">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">AML\KYC</a></li>
+								<li><a href="#">Вопросы\ответы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<div class="tolbar_lang">
+								<div class="langlist_div">
+									<div class="langlist_title d-flex align-items-center">
+										<img src="images/icons/ru_RU.png">
+										<span>Русский</span>
+									</div>
+									<div class="langlist_ul">
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/en_US.png">
+											</div>
+											English
+										</a>
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/zh_CN.png">
+											</div>
+											中文
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="user_widget">
+								<a href="#">Войти</a>
+								<span>/</span>
+								<a href="#">Регистрация</a>
+							</div>
+							<div class="f_widget f_widget_contacts mt-5">
+								<div class="three">Контакты</div>
+								<ul>
+									<li><a href="#">support@smrex.ru</a></li>
+									<li><a href="#">Telegram</a></li>
+									<li>Ежедневно: с 10:00 - 20:00 по МСК</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<main>
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div class="page_content mb-5">
+								<h1 class="mb-4">Обналичить USDT на рубли в Москве</h1>
+								<p>Пожалуйста, примите во внимание следующую информацию перед созданием заявки: <br>— Убедитесь, что вы предоставили правильные контактные данные. <br>— Средства могут быть получены через курьера или в офисе с 10:00 до 20:30 по московскому времени. Оплата, сделанная после 20:00, будет перенесена на следующий день. — Минимальное количество подтверждений в сети по данному направлению 1. — Обратите внимание, что стоимость доставки в пределах КАД/МКАД составляет 1000 рублей. — Комиссия фиксируется при создании заявки. Курс криптовалюты определяется по бирже okex.com и пересчитывается при изменении на 0,1% в любую сторону после полного зачисления средств. Курс доллара определяется по ММВБ.</p>
+									<br><p>Важно! <br> — Обратите внимание, что все транзакции проверяются на соответствие политике противодействия отмыванию денег (AML). <br>— Проверьте введенные данные и указывайте активный почтовый адрес. Все изменения по заявке осуществляются только через электронную почту. <br> — Не оплаченная заявка будет автоматически удалена через 30 минут.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="exchange_widget_step">
+								
+								<form action="">
+									<div  class="two mb-4">Введите корректные данные</div>
+									<div class="form-group d-flex justify-content-between flex-column flex-sm-row ">
+										<div class="form-group">
+											<label for="">Вы отдаете</label>
+											<input type="text" value="1.99">
+											<div class="small bold mt-2">Минимум:  2 179.1304 USD</div>
+										</div>
+										<div class="form-group">
+											<label for="">Вы получаете</label>
+											<input type="text" value="12987855">
+											<div class="small bold mt-2">Максимум:  2 179.1304 USD</div>
+										</div>
+									</div>
+									<div class="center light mt-3 mb-3">Курс обмена: 100 USD = 9 177.973 RUB</div>
+									<div class="form_divider"></div>
+									<div class="mb-4 three">Пользовательские данные</div>
+									<div class="form-group d-flex justify-content-between flex-column flex-sm-row">
+										<div class="form-group">
+											<label for="">E-mail</label>
+											<input type="text">
+										</div>
+										<div class="form-group">
+											<label for="">Имя</label>
+											<input type="text">
+										</div>
+									</div>
+									<div class="message d-flex align-items-center bold mb-4">
+										<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M44.1803 31.9208L29.1599 7.0108C28.5525 6.06065 27.7157 5.2787 26.7266 4.73706C25.7375 4.19541 24.628 3.9115 23.5003 3.9115C22.3726 3.9115 21.2631 4.19541 20.274 4.73706C19.2849 5.2787 18.4481 6.06065 17.8407 7.0108L2.82028 31.9208C2.28967 32.8053 2.00128 33.8139 1.98409 34.8452C1.9669 35.8765 2.22153 36.8941 2.72236 37.7958C3.3014 38.8107 4.13953 39.6537 5.15109 40.2387C6.16265 40.8236 7.31137 41.1294 8.47986 41.125H38.5207C39.6815 41.1374 40.825 40.8433 41.8359 40.2726C42.8468 39.7018 43.6892 38.8745 44.2782 37.8741C44.7937 36.9631 45.0565 35.9308 45.0393 34.8841C45.0221 33.8375 44.7255 32.8144 44.1803 31.9208ZM40.8511 35.9354C40.6158 36.34 40.2742 36.6724 39.8634 36.8968C39.4526 37.1212 38.9883 37.2289 38.5207 37.2083H8.47986C8.01225 37.2289 7.54792 37.1212 7.13715 36.8968C6.72637 36.6724 6.38481 36.34 6.14944 35.9354C5.97757 35.6377 5.88708 35.3 5.88708 34.9562C5.88708 34.6125 5.97757 34.2748 6.14944 33.9771L21.1894 9.04747C21.4597 8.69048 21.809 8.40096 22.2099 8.20161C22.6109 8.00227 23.0525 7.89853 23.5003 7.89853C23.948 7.89853 24.3897 8.00227 24.7906 8.20161C25.1916 8.40096 25.5409 8.69048 25.8111 9.04747L40.8315 33.9575C41.0101 34.2558 41.106 34.5962 41.1094 34.9438C41.1128 35.2914 41.0237 35.6336 40.8511 35.9354Z" fill="#231F20" />
+											<path d="M23.5001 33.2917C24.5816 33.2917 25.4584 32.4149 25.4584 31.3333C25.4584 30.2518 24.5816 29.375 23.5001 29.375C22.4185 29.375 21.5417 30.2518 21.5417 31.3333C21.5417 32.4149 22.4185 33.2917 23.5001 33.2917Z" fill="#231F20" />
+											<path d="M23.5001 15.6667C22.9807 15.6667 22.4826 15.873 22.1153 16.2403C21.7481 16.6075 21.5417 17.1056 21.5417 17.625V25.4584C21.5417 25.9777 21.7481 26.4758 22.1153 26.8431C22.4826 27.2104 22.9807 27.4167 23.5001 27.4167C24.0195 27.4167 24.5176 27.2104 24.8848 26.8431C25.2521 26.4758 25.4584 25.9777 25.4584 25.4584V17.625C25.4584 17.1056 25.2521 16.6075 24.8848 16.2403C24.5176 15.873 24.0195 15.6667 23.5001 15.6667Z" fill="#231F20" />
+										</svg>
+										<span>Важно! <br> Указывайте Ваш действующий почтовый ящик, ибо все изменения по заявке происходят исключительно через него.</span>
+									</div>
+									<div class="form-group mb-5">
+										<label for="">Telegram</label>
+										<input type="text">
+									</div>
+									<div class="form_divider"></div>
+									<div class="d-flex justify-content-center">
+										<div class="checkbox_wrap mt-3">
+											<label class="checkbox">
+												<input type="checkbox" checked="" name="" id="policy_ceck" wfd-id="id2">
+												<span>Не запоминать данные</span>
+												<span class="checkmark"></span>
+											</label>
+										</div>
+									</div>
+									<button class="btn mt-4">Обменять</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="row gy-4">
+					<div class="col-lg-3">
+						<a href="#" class="logo">
+							<img src="images/logo.svg">
+						</a>
+						<p class="white mb-2 mb-lg-5 mt-4">Безопасный сервис обмена электронных валют.
+							<br>100% конфиденциальность и сохранность средств 
+							наших клиентов.</p>
+						<div class="copyrights bold white less d-lg-block d-none">© 2024 SMREX</div>	
+					</div>
+					<div class="col-lg-3 offset-lg-1">
+						<div class="f_widget">
+							<div class="three white">Информация</div>
+							<ul>
+								<li><a href="#">Гарантии и политика возвратов</a></li>
+								<li><a href="#">Предупреждение</a></li>
+								<li><a href="#">Правила пользования сайта</a></li>
+								<li><a href="#">AML/CYK</a></li>
+								<li><a href="#">Карта сайта</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-1">
+						<div class="f_widget f_widget_contacts">
+							<div class="three white">Контакты</div>
+							<ul>
+								<li><a href="#">support@smrex.ru</a></li>
+								<li><a href="#">Telegram</a></li>
+								<li>Ежедневно: с 10:00 - 20:00 по МСК</li>
+							</ul>
+						</div>
+						<div class="copyrights bold white less d-lg-none d-block mt-5">© 2024 SMREX</div>	
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+</body>
+</html>

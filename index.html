@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>SMRex</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+	<script src="libs/select2/select2.min.js" defer></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body class="home">
+
+	<div class="app">
+		<header class="dark_header">
+			<div class="container-fluid">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-8">
+						<div class="d-flex align-items-center justify-content-lg-start justify-content-between">
+							<a href="" class="logo">
+								<svg width="92" height="79" viewBox="0 0 92 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2_5)">
+										<path d="M77.8207 35.1834L77.8538 13.8913L63.063 7.61139V71.5744L77.8207 65.2016V44.1572H72.0201V62.5014L68.8389 63.8082V41.8348H77.8207V37.512H68.8389V15.1237L72.0366 16.5048V35.1834H77.8207Z" fill="white" />
+										<path d="M45.1655 79L50.9413 76.498V43.0425L54.1473 43.8476V75.1107L59.9231 72.6087V40.9058L52.3956 39.0231L59.9231 37.1404V6.28606L57.1468 5.08459L45.1655 0V36.7874V79ZM50.933 7.53089L54.1391 8.91816V34.1925L50.933 34.9976V7.53089Z" fill="white" />
+										<path d="M14.2619 37.45H5.61056V22.283L8.63481 20.9824V34.979H14.2619V13.3463L0 19.5085V41.8967H8.63481V58.1228L5.6023 56.8223L5.61056 44.3616H0V59.5968L14.2702 65.7962L14.2619 37.45Z" fill="white" />
+										<path d="M85.4722 51.5023L87.067 46.5788L87.571 48.1395V61.1885L91.9917 59.0766V48.0156L89.298 39.6734L91.9917 31.3312L92 19.9606L90.9341 19.4527L87.571 18.0283V31.2012L87.067 32.768L85.4722 27.8445V17.1365L81.0598 15.2538V27.9683L84.836 39.6734L81.0598 51.3723V64.0311L85.4722 62.1546V51.5023Z" fill="white" />
+										<path d="M41.9512 77.749V1.33774L17.5588 11.9033V67.1896L23.4917 69.7536V14.5478L26.7886 13.0924V71.1842L32.7214 73.7544V10.5532L36.0183 9.12874V75.1788L41.9512 77.749Z" fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_2_5">
+											<rect width="92" height="79" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<nav class="d-none d-lg-block">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">AML\KYC</a></li>
+									<li><a href="#">Вопросы\ответы</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="toggle_button d-block d-lg-none">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-none d-lg-block">
+						<div class="d-flex align-items-center justify-content-end">
+							<div class="tolbar_lang">
+								<div class="langlist_div">
+									<div class="langlist_title d-flex align-items-center">
+										<img src="images/icons/ru_RU.png">
+										<span>Русский</span>
+									</div>
+									<div class="langlist_ul">
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/en_US.png">
+											</div>
+											English
+										</a>
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/zh_CN.png">
+											</div>
+											中文
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="user_widget">
+								<a href="#">Войти</a>
+								<span>/</span>
+								<a href="#">Регистрация</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside class="d-lg-none d-block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="aside_menu">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">AML\KYC</a></li>
+								<li><a href="#">Вопросы\ответы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<div class="tolbar_lang">
+								<div class="langlist_div">
+									<div class="langlist_title d-flex align-items-center">
+										<img src="images/icons/ru_RU.png">
+										<span>Русский</span>
+									</div>
+									<div class="langlist_ul">
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/en_US.png">
+											</div>
+											English
+										</a>
+										<a href="#" class="langlist_li d-flex align-items-center">
+											<div class="langlist_liimg">
+												<img src="images/icons/zh_CN.png">
+											</div>
+											中文
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="user_widget">
+								<a href="#">Войти</a>
+								<span>/</span>
+								<a href="#">Регистрация</a>
+							</div>
+							<div class="f_widget f_widget_contacts mt-5">
+								<div class="three">Контакты</div>
+								<ul>
+									<li><a href="#">support@smrex.ru</a></li>
+									<li><a href="#">Telegram</a></li>
+									<li>Ежедневно: с 10:00 - 20:00 по МСК</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<main>
+			<div class="first_screen first_screen_overlay d-flex align-items-center">
+				<div class="container-fluid">
+					<div class="row align-items-center gy-lg-0 gy-3">
+						<div class="col-lg-5">
+							<div class="first_screen_widget white">
+								<h1 class="mb-4 mb-xl-4">Доверяй финансы профессионалам</h1>
+								<div class="four">Пн — Вск с 10:00 до 21:00 по МСК</div>
+								<div class="four mt-2">Email: <a href="mailto:support@smrex.com">support@smrex.com</a></div>
+								<div class="four mt-2">Telegram: <a href="#">Написать</a></div>
+							</div>
+						</div>
+						<div class="col-lg-5 offset-lg-2">
+							<div class="exchange_widget">
+								<div class="three mb-4">Начать обмен</div>
+								<form action="" class="exchange_form_widget">
+									<div class="form-group">
+										<label for="give">Вы отдаете</label>
+										<select name="" id="" class="js-select-single">
+											<option value="">Bitcoin BTC</option>
+											<option value="">Etherium ETH</option>
+										</select>
+										<div class="center small light mt-1">Мин. 0.07624513 BTC / Макс. 4.57928762 BTC</div>
+									</div>
+									<div class="form-group">
+										<label for="give">Вы получаете</label>
+										<select name="" id="" class="js-select-single">
+											<option value="">Наличные (Сбер) RUB</option>
+											<option value="">Наличные (Тинькофф) RUB</option>
+										</select>
+										
+									</div>
+									<div class="form-group d-flex justify-content-between flex-column flex-sm-row">
+										<div class="form-group">
+											<label for="">Вы платите</label>
+											<input type="text" value="1.99">
+										</div>
+										<div class="form-group">
+											<label for="">Вы Получаете</label>
+											<input type="text" value="12987855">
+										</div>
+									</div>
+									<div class="center small light mt-1">Курс обмена: 1 BTC = 6 538 448.4511 RUB <br> Включая доплату: <span>1%</span></div>
+									<div class="form-group">
+										<label for="give">Город</label>
+										<select name="" id="" class="js-select-single">
+											<option value="">Москва</option>
+											<option value="">Нижний Новгород</option>
+										</select>
+									</div>
+									<button type="submit" class="btn">Обменять</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4">
+							<h2 class="section-title">Безопасно <br>выполним сделку</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="buy_steps_widgets flex-column flex-lg-row d-flex justify-content-between">
+								<div class="buy_steps_widget">
+									<div>
+										<div class="round_step">
+											1
+										</div>
+										<div class="bold text">Выберите направление <br>
+											и способ получения</div>
+									</div>
+								</div>
+								<div class="buy_steps_widget">
+									<div>
+										<div class="round_step">
+											2
+										</div>
+										<div class="bold text">Подтвердите введенные данные <br>
+											и согласитесь справилами</div>
+									</div>
+								</div>
+								<div class="buy_steps_widget">
+									<div>
+										<div class="round_step">
+											3
+										</div>
+										<div class="bold text">Получите средства выбранным<br>
+											для вас способом</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="d-none d-lg-block">
+				<div class="container-fluid">
+					<div class="top_border"></div>
+				</div>
+			</section>
+			<section class="pb-5">
+				
+				<div class="container-fluid">
+					
+					<div class="row">
+						<div class="col-lg-4">
+							<h2 class="section-title">Преимущества пользования SMREX</h2>
+						</div>
+					</div>
+					<div class="row gy-5">
+						<div class="col-md-3 pr-2">
+							<div class="advantage_icon d-flex align-items-center justify-content-center mb-4">
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1464_5222)">
+										<path d="M14 21.414L9 16.413L10.413 15L14 18.586L21.585 11L23 12.415L14 21.414Z" fill="#3C3C3C" />
+										<path d="M16 2C13.2311 2 10.5243 2.82109 8.22202 4.35943C5.91973 5.89777 4.12531 8.08427 3.06569 10.6424C2.00606 13.2006 1.72881 16.0155 2.26901 18.7313C2.8092 21.447 4.14257 23.9416 6.1005 25.8995C8.05844 27.8574 10.553 29.1908 13.2687 29.731C15.9845 30.2712 18.7994 29.9939 21.3576 28.9343C23.9157 27.8747 26.1022 26.0803 27.6406 23.778C29.1789 21.4757 30 18.7689 30 16C30 12.287 28.525 8.72601 25.8995 6.1005C23.274 3.475 19.713 2 16 2ZM16 28C13.6266 28 11.3065 27.2962 9.33316 25.9776C7.35977 24.6591 5.8217 22.7849 4.91345 20.5922C4.00519 18.3995 3.76755 15.9867 4.23058 13.6589C4.6936 11.3311 5.83649 9.19295 7.51472 7.51472C9.19295 5.83649 11.3311 4.6936 13.6589 4.23058C15.9867 3.76755 18.3995 4.00519 20.5922 4.91345C22.7849 5.8217 24.6591 7.35977 25.9776 9.33316C27.2962 11.3065 28 13.6266 28 16C28 19.1826 26.7357 22.2348 24.4853 24.4853C22.2348 26.7357 19.1826 28 16 28Z" fill="#3C3C3C" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1464_5222">
+											<rect width="32" height="32" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="text bold mb-2">Широкий <br>
+								выбор направлений</div>
+							<div class="">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+						</div>
+						<div class="col-md-3  pr-2">
+							<div class="advantage_icon d-flex align-items-center justify-content-center mb-4">
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1464_5231)">
+										<path d="M17 8H15V14H17V8Z" fill="#3C3C3C" />
+										<path d="M17 18H15V24H17V18Z" fill="#3C3C3C" />
+										<path d="M24 15H18V17H24V15Z" fill="#3C3C3C" />
+										<path d="M14 15H8V17H14V15Z" fill="#3C3C3C" />
+										<path d="M4 10H2V4C2.00056 3.46974 2.21145 2.96135 2.5864 2.5864C2.96135 2.21145 3.46974 2.00056 4 2H10V4H4V10Z" fill="#3C3C3C" />
+										<path d="M10 30H4C3.46974 29.9994 2.96135 29.7886 2.5864 29.4136C2.21145 29.0386 2.00056 28.5303 2 28V22H4V28H10V30Z" fill="#3C3C3C" />
+										<path d="M28 30H22V28H28V22H30V28C29.9994 28.5303 29.7886 29.0386 29.4136 29.4136C29.0386 29.7886 28.5303 29.9994 28 30Z" fill="#3C3C3C" />
+										<path d="M30 10H28V4H22V2H28C28.5303 2.00056 29.0386 2.21145 29.4136 2.5864C29.7886 2.96135 29.9994 3.46974 30 4V10Z" fill="#3C3C3C" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1464_5231">
+											<rect width="32" height="32" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="text bold mb-2">Отслеживание <br>сделки</div>
+							<div class="">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+						</div>
+						<div class="col-md-3  pr-2">
+							<div class="advantage_icon d-flex align-items-center justify-content-center mb-4">
+								<svg width="40" height="13" viewBox="0 0 40 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.211436 2.38118C0.49453 2.66309 1.90764 3.51002 2.18956 4.35694C2.47265 5.20268 3.03884 10.6169 4.73504 12.0288C6.48433 13.482 13.0828 12.9406 14.3461 12.3119C17.1735 10.9023 17.5203 6.34921 18.0204 4.35576C18.3023 3.22692 19.9985 3.22692 19.9985 3.22692C19.9985 3.22692 21.6947 3.22692 21.9778 4.35458C22.478 6.34921 22.8271 10.9153 25.6521 12.3225C26.9166 12.9536 33.5151 13.495 35.2667 12.0418C36.9606 10.6298 37.5256 5.2015 37.8087 4.35458C38.0894 3.50884 39.5049 2.66192 39.7868 2.38C40.0711 2.09809 40.0711 0.969249 39.7868 0.686155C39.2218 0.122326 32.5514 -0.380166 25.3691 0.40424C23.9359 0.561121 23.3909 0.968069 19.9973 0.968069C16.6061 0.968069 16.0588 0.559942 14.6268 0.40424C7.44921 -0.378987 0.777624 0.123505 0.211436 0.687334C-0.0704786 0.969248 -0.0704786 2.09927 0.211436 2.38118Z" fill="#3C3C3C" />
+								</svg>
+							</div>
+							<div class="text bold mb-2">Полная конфеденциальность<br> наших клиентов</div>
+							<div class="">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+						</div>
+						<div class="col-md-3  pr-2">
+							<div class="advantage_icon d-flex align-items-center justify-content-center mb-4">
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1464_5246)">
+										<path d="M30 22H2V24H30V22Z" fill="#3C3C3C" />
+										<path d="M30 26H2V28H30V26Z" fill="#3C3C3C" />
+										<path d="M24 10C23.6044 10 23.2178 10.1173 22.8889 10.3371C22.56 10.5568 22.3036 10.8692 22.1522 11.2346C22.0009 11.6001 21.9613 12.0022 22.0384 12.3902C22.1156 12.7781 22.3061 13.1345 22.5858 13.4142C22.8655 13.6939 23.2219 13.8844 23.6098 13.9616C23.9978 14.0387 24.3999 13.9991 24.7654 13.8478C25.1308 13.6964 25.4432 13.44 25.6629 13.1111C25.8827 12.7822 26 12.3956 26 12C26 11.4696 25.7893 10.9609 25.4142 10.5858C25.0391 10.2107 24.5304 10 24 10Z" fill="#3C3C3C" />
+										<path d="M16 16C15.2089 16 14.4355 15.7654 13.7777 15.3259C13.1199 14.8864 12.6072 14.2616 12.3045 13.5307C12.0017 12.7998 11.9225 11.9956 12.0769 11.2196C12.2312 10.4437 12.6122 9.73098 13.1716 9.17157C13.731 8.61216 14.4437 8.2312 15.2196 8.07686C15.9956 7.92252 16.7998 8.00173 17.5307 8.30448C18.2616 8.60723 18.8864 9.11993 19.3259 9.77772C19.7654 10.4355 20 11.2089 20 12C19.9988 13.0605 19.577 14.0772 18.8271 14.8271C18.0772 15.577 17.0605 15.9988 16 16ZM16 10C15.6044 10 15.2178 10.1173 14.8889 10.3371C14.56 10.5568 14.3036 10.8692 14.1522 11.2346C14.0009 11.6001 13.9613 12.0022 14.0384 12.3902C14.1156 12.7781 14.3061 13.1345 14.5858 13.4142C14.8655 13.6939 15.2219 13.8844 15.6098 13.9616C15.9978 14.0387 16.3999 13.9991 16.7654 13.8478C17.1308 13.6964 17.4432 13.44 17.6629 13.1111C17.8827 12.7822 18 12.3956 18 12C17.9995 11.4697 17.7886 10.9613 17.4136 10.5864C17.0387 10.2114 16.5303 10.0005 16 10Z" fill="#3C3C3C" />
+										<path d="M8 10C7.60444 10 7.21776 10.1173 6.88886 10.3371C6.55996 10.5568 6.30362 10.8692 6.15224 11.2346C6.00087 11.6001 5.96126 12.0022 6.03843 12.3902C6.1156 12.7781 6.30608 13.1345 6.58579 13.4142C6.86549 13.6939 7.22186 13.8844 7.60982 13.9616C7.99778 14.0387 8.39992 13.9991 8.76537 13.8478C9.13082 13.6964 9.44318 13.44 9.66294 13.1111C9.8827 12.7822 10 12.3956 10 12C10 11.4696 9.78929 10.9609 9.41421 10.5858C9.03914 10.2107 8.53043 10 8 10Z" fill="#3C3C3C" />
+										<path d="M28 20H4C3.46998 19.9987 2.96206 19.7875 2.58727 19.4127C2.21249 19.0379 2.00135 18.53 2 18V6C2.00135 5.46998 2.21249 4.96205 2.58727 4.58727C2.96206 4.21249 3.46998 4.00135 4 4H28C28.53 4.00135 29.0379 4.21249 29.4127 4.58727C29.7875 4.96205 29.9987 5.46998 30 6V18C29.9993 18.5302 29.7883 19.0385 29.4134 19.4134C29.0385 19.7883 28.5302 19.9993 28 20ZM28 6H4V18H28V6Z" fill="#3C3C3C" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1464_5246">
+											<rect width="32" height="32" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="text bold mb-2">Отзывчивая<br> техподдержка</div>
+							<div class="">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="row gy-4">
+					<div class="col-lg-3">
+						<a href="#" class="logo">
+							<img src="images/logo.svg">
+						</a>
+						<p class="white mb-2 mb-lg-5 mt-4">Безопасный сервис обмена электронных валют.
+							<br>100% конфиденциальность и сохранность средств 
+							наших клиентов.</p>
+						<div class="copyrights bold white less d-lg-block d-none">© 2024 SMREX</div>	
+					</div>
+					<div class="col-lg-3 offset-lg-1">
+						<div class="f_widget">
+							<div class="three white">Информация</div>
+							<ul>
+								<li><a href="#">Гарантии и политика возвратов</a></li>
+								<li><a href="#">Предупреждение</a></li>
+								<li><a href="#">Правила пользования сайта</a></li>
+								<li><a href="#">AML/CYK</a></li>
+								<li><a href="#">Карта сайта</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-1">
+						<div class="f_widget f_widget_contacts">
+							<div class="three white">Контакты</div>
+							<ul>
+								<li><a href="#">support@smrex.ru</a></li>
+								<li><a href="#">Telegram</a></li>
+								<li>Ежедневно: с 10:00 - 20:00 по МСК</li>
+							</ul>
+						</div>
+						<div class="copyrights bold white less d-lg-none d-block mt-5">© 2024 SMREX</div>	
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+</body>
+</html>
